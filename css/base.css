@@ -29,6 +29,11 @@ html {
     min-height: 100%;
 }
 
+html, body {		
+    width: auto !important;		
+    overflow-x: hidden !important;		
+}
+
 body {
     /* Margin bottom by footer height */
     margin-bottom: 60px;

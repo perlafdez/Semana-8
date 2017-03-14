@@ -130,28 +130,34 @@ body {
 
 @media (min-width: 548px) {
     .first-slide {
+        width: 100%;
         content: url("../res/imagenes/limon1.png");
     }
 
     .second-slide {
+        width: 100%;
         content: url("../res/imagenes/limon2.png");
     }
 
     .third-slide {
+        width: 100%;
         content: url("../res/imagenes/limon3.png");
     }
 }
 
 @media (max-width: 547px) {
     .first-slide {
+        width: 100%;
         content: url("../res/imagenes/1alt.png");
     }
 
     .second-slide {
+        width: 100%;
         content: url("../res/imagenes/2alt.png");
     }
 
     .third-slide {
+        width: 100%;
         content: url("../res/imagenes/3alt.png");
     }
 }
