@@ -22,6 +22,11 @@
     font-family: NeutraTextBold;
 }
 
+
+html, body {
+    width: auto !important;
+    overflow-x: hidden !important;
+}
 /**************************NAV BAR**************************/
 
 html {
@@ -90,10 +95,6 @@ body {
 
 .featurette-p .row {
 	font-family: 'DINL', sans-serif;
-}
-
-.col-md-6 .featurette-image {
-	margin-left: 60px;
 }
 
 .row .col-lg-4 {
