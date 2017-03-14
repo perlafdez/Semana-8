@@ -1,0 +1,113 @@
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+
+.navbar-brand:hover{
+    -webkit-filter: brightness(0);
+}
+
+.nav.navbar-nav.navbar-right li a {
+    color: #ffffff;
+    bottom: 0;
+    font-size: 150%;
+}
+
+.nav.navbar-nav.navbar-right li a:hover {
+    -webkit-filter: brightness(0);
+}
+
+.navbar-toggle {
+    border-style: none;
+}
+
+
+
+@media (min-width: 768px) {
+    .navbar-header {
+        float: left;
+        text-align: center;
+        width: 100%;
+    }
+
+    .transparent {
+        background:rgba(69, 69, 69, 0);
+        border-style: none;
+    }
+
+    .semi-transparent {
+        background:rgba(69, 69, 69, 0.5);
+        border-style: none;
+    }
+}
+
+
+.navbar-inverse .navbar-toggle {
+    border-color: transparent; /* Removes border color */
+    text-align: center;
+}
+
+.navbar-inverse .navbar-toggle:hover {
+    background-color: rgba(69, 69, 69, 0.8); /* Changes toggle color on hover */
+}
+
+@media (max-width: 767px) {
+
+    .navbar-toggle {
+        float: right;
+        margin-right: 5px;
+        margin-top: 25px;
+    }
+
+    .transparent {
+        background:rgba(69, 69, 69, 0.8);
+        border-style: none;
+    }
+
+    #myNavbar {
+        background: rgba(69, 69, 69, 0.8);
+    }
+
+    .navbar {
+        padding: 0;
+        transition: background 0.5s ease-in-out 0s, padding 0.5s ease-in-out 0s;
+    }
+    .navbar-brand {
+        float: left;
+        text-align: center;
+        font-size: 18px;
+        height: 90px;
+        line-height: 2px;
+        padding: 2px;
+    }
+
+}
+
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-family: NeutraTextBook;
+    font-size: 30px;
+    color: white;
+    /* Set the fixed height of the footer here */
+    height: 70px;
+    background-color: #fbc646;
+}
+
+.footer .circle:before{
+    content: ' \25CF';
+    font-size: 40px;
+    color: #ee8005;
+}
+
+.footer-text {
+    padding-top: 20px;
+}
+
