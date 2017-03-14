@@ -92,6 +92,16 @@ body {
 	font-family: 'DINL', sans-serif;
 }
 
+button {
+	background-color: #ee8005;
+	color: #ffffff;
+}
+
+button:hover {
+	background-color: #fbc646;
+	color: #ffffff;
+}
+
 .col-md-6 .featurette-image {
 	margin-left: 60px;
 }
@@ -101,12 +111,28 @@ body {
 	text-align: center;
 }
 
+.img-circle {
+	width: 70%;
+	height: auto;
+}
+
+.img-circle:hover {
+	opacity: 0.6;
+}
 /**********************SHOP*******************/
 
 .row-shop {
 	margin: 0 auto;
 	border: 1px solid red;
+	width: 90%;
 	margin-top: 160px;
+}
+
+.row-shop .col-lg-4 {
+	width: 25%;
+	border: 1px solid red;
+	text-align: center;
+	margin-bottom: 30px;
 }
 
 /*********************FOOTER******************/
@@ -116,21 +142,26 @@ body {
     bottom: 0;
     width: 100%;
     font-family: NeutraTextBook;
-    font-size: 30px;
+    font-size: 20px;
     color: white;
     /* Set the fixed height of the footer here */
-    height: 70px;
+    height: 50px;
     background-color: #fbc646;
 }
 
-.footer .circle:before{
-    content: ' \25CF';
+.footer .container .pull-right .fa-lg {
     font-size: 40px;
-    color: #ee8005;
+    color: #ffffff;
+    margin: 10px;
+    margin-top: 20px;
+}
+
+.footer .container .pull-right .fa-lg:hover {
+	color: #ee8005;
 }
 
 .footer-text {
-    padding-top: 20px;
+    padding-top: 15px;
 }
 
 /*********************MEDIA QUERIES***************/
