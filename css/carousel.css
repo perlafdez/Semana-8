@@ -113,7 +113,6 @@ body {
     }
     /* Carousel base class */
     .carousel {
-        height: 375px;
         margin-bottom: 60px;
     }
 
@@ -124,18 +123,26 @@ body {
 
     /* Declare heights because of positioning of img element */
     .carousel .item {
-        height: 375px;
         background-color: #777;
     }
 
-    .carousel-inner > .item > img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        min-width: 100%;
-        height: 375px;
+}
+
+@media (min-width: 548px) {
+    .first-slide {
+        content: url("../res/imagenes/limon1.png");
     }
 
+    .second-slide {
+        content: url("../res/imagenes/limon2.png");
+    }
+
+    .third-slide {
+        content: url("../res/imagenes/limon3.png");
+    }
+}
+
+@media (max-width: 547px) {
     .first-slide {
         content: url("../res/imagenes/1alt.png");
     }
@@ -148,6 +155,7 @@ body {
         content: url("../res/imagenes/3alt.png");
     }
 }
+
 
 @media (min-width: 768px) {
     /* Thin out the marketing headings */
@@ -169,7 +177,6 @@ body {
     
     /* Carousel base class */
     .carousel {
-        height: 670px;
         margin-bottom: 60px;
     }
 
@@ -180,29 +187,9 @@ body {
 
     /* Declare heights because of positioning of img element */
     .carousel .item {
-        height: 670px;
         background-color: #777;
     }
 
-    .carousel-inner > .item > img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        min-width: 100%;
-        height: 670px;
-    }
-
-    .first-slide {
-        content: url("../res/imagenes/limon1.png");
-    }
-
-    .second-slide {
-        content: url("../res/imagenes/limon2.png");
-    }
-
-    .third-slide {
-        content: url("../res/imagenes/limon3.png");
-    }
 
 }
 
