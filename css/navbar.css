@@ -8,20 +8,6 @@ body {
     margin-bottom: 60px;
 }
 
-.navbar-brand:hover{
-    -webkit-filter: brightness(0);
-}
-
-.nav.navbar-nav.navbar-right li a {
-    color: #ffffff;
-    bottom: 0;
-    font-size: 150%;
-}
-
-.nav.navbar-nav.navbar-right li a:hover {
-    -webkit-filter: brightness(0);
-}
-
 .navbar-toggle {
     border-style: none;
 }

@@ -2,8 +2,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Bootstrap stuff -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta charset="utf-8">
@@ -13,18 +11,13 @@
     <meta name="author" content="Perla Fernandez">
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=320, height=device-height, target-densitydpi=medium-dpi" />
 
-    <!--------------------------- Bootstrap Library ---------------------------------->
+    <!-- Bootstrap Library -->
 
-    <!-- Latest compiled and minified CSS -->
+    <!-- CSS de Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-    <!---------------------------------- Styles --------------------------------->
-    <link href="css/base.css" rel="stylesheet">
-    <link href="css/navbar.css" rel="stylesheet">
-    <link href="css/carousel.css" rel="stylesheet">
+    <!-- Styles -->
+    <link href="css/style.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -32,11 +25,11 @@
 
 <body>
 
-<!-------------------------------- NavBar ---------------------------------------->
+<!-- NavBar -->
 <div class="navbar-wrapper">
     <div class="container">
         <nav class="navbar navbar-inverse transparent neutrabook">
-            <!-- Brand Name -->
+            <!-- Logo -->
             <div class="container">
 
                 <div class="navbar-header">
@@ -47,14 +40,14 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="#">
-                        <img src="res/imagenes/navbar/nav-main.png" alt="Bocao Food Fest" height="80" width="150">
+                        <img src="res/imagenes/logo-01.png" class="brand-img" alt="Bocao Food Fest">
                     </a>
                 </div>
 
                 <div id="myNavbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Info</a></li>
-                        <li><a href="#">Tickets</a></li>
+                        <li><a href="#info">Info</a></li>
+                        <li><a href="tickets.html">Tickets</a></li>
                         <li><a href="shop.html">Shop</a></li>
                         <li><a href="#">Contact</a></li>
                         <li><a href="#"><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i></a></li>
@@ -67,9 +60,9 @@
 </div>
 
 
-<!-------------------------------- Carousel ---------------------------------------->
+<!-- Carousel -->
 <div id="myCarousel" class="carousel slide carousel-fade align-bottom" data-ride="carousel">
-    <!-- Indicators -->
+    <!-- Indicadores -->
     <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -101,8 +94,8 @@
 </div><!-- /.carousel -->
 
 
-<!-------------------------------- Main content ---------------------------------------->
-<div class="container main-content neutrabook">
+<!-- Main content -->
+<div class="container main-content neutrabook" id="info">
 
     <!-- START THE FEATURETTES -->
 
@@ -136,7 +129,7 @@
 
     <hr class="featurette-divider">
 
-    <!-- Three columns of text below the carousel -->
+    <!-- Galeria -->
 
     <h1 class="featurette-heading">Galer&iacute;as</h1>
 
@@ -160,7 +153,7 @@
         </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
 
-    <!-- /END THE FEATURETTES -->
+    <!-- /fin de galeria -->
 
 </div>
 
@@ -168,20 +161,49 @@
 <footer class="footer">
         <div class="container">
                 <p class="pull-right">
-                    <span><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></span>
-                    <span><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></span>
-                    <span><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></span>
+                    <span><a href="https://www.facebook.com/BocaoRD" target="blank"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></span>
+                    <span><a href="https://twitter.com/bocaord?lang=en" target="blank"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a></span>
+                    <span><a href="https://www.instagram.com/bocaord/" target="blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></span>
                 </p>
                 <p class="footer-text">Bocao Food Fest 2017 &copy;</p>
         </div>
 </footer>
 
-<!---------------------------------- JQuery --------------------------------->
+<!-- JQuery -->
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
 
-<!---------------------------------- BootStrap --------------------------------->
-<!-- Latest compiled and minified JavaScript -->
+<!-- BootStrap -->
+<!-- JavaScript min -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script>
+$(document).ready(function(){
+  // Add scrollspy to <body>
+  $('body').scrollspy({target: ".navbar", offset: 50});   
+
+  // Add smooth scrolling on all links inside the navbar
+  $("#myNavbar a").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    }  // End if
+  });
+});
+</script>
 
 </body>
 </html>

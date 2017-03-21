@@ -1,0 +1,655 @@
+@font-face {
+    font-family: NeutraTextBold;
+    src: url(../res/tipografias/NeutraTextBold.otf);
+}
+
+@font-face {
+    font-family: NeutraTextBook;
+    src: url(../res/tipografias/NeutraTextBook.otf);
+}
+
+@font-face {
+    font-family: DINL;
+    src: url(../res/tipografias/DINL___.TTF);
+}
+
+.neutrabook {
+    font-family: NeutraTextBook;
+}
+
+
+.neutrabold {
+    font-family: NeutraTextBold;
+}
+
+.dinl {
+	font-family: DINL;
+}
+
+/**************************NAV BAR**************************/
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+html, body {		
+    width: auto !important;		
+    overflow-x: hidden !important;		
+}
+
+body {
+    /* Margin bottom by footer height */
+    
+}
+
+.brand-img {
+	width: auto;
+    max-width: 150px;
+    height: auto;
+    max-height: 100px;
+}
+
+.brand-img:hover {
+	content: url("../res/imagenes/logo-alt-01.png");
+	width: auto;
+    max-width: 150px;
+    height: auto;
+    max-height: 100px;
+}
+
+/*menu homepage*/
+.navbar-inverse .navbar-nav li a {
+    color: #ffffff;
+    font-size: 1.5em;
+}
+
+/*hover menu homepage*/
+.nav.navbar-nav.navbar-right li a:hover {
+    opacity: 0.5;
+    font-size: 1.5em;
+}
+
+.navbar-toggle {
+    border-style: none;
+}
+
+@media (min-width: 768px) {
+    .navbar-header {
+        float: left;
+        text-align: center;
+        width: 100%;
+    }
+
+    .transparent {
+        background:rgba(69, 69, 69, 0);
+        border-style: none;
+    }
+
+    .semi-transparent {
+        background:rgba(69, 69, 69, 0.5);
+        border-style: none;
+    }
+}
+
+
+.navbar-inverse .navbar-toggle {
+    border-color: transparent; /* Quita el color del borde */
+    text-align: center;
+}
+
+.navbar-inverse .navbar-toggle:hover {
+    background-color: rgba(69, 69, 69, 0.8); /* Cambia el color en hover */
+}
+
+/**********************CAROUSEL*************************/
+
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+body {
+    padding-bottom: 40px;
+    color: #5a5a5a;
+}
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+
+.navbar-wrapper .navbar .container {
+    width: auto;
+}
+
+
+.carousel-fade .carousel-inner .item {
+    opacity: 0;
+    transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+    opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+    z-index: 2;
+}
+
+
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+}
+
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+@media (max-width: 767px) {
+
+    /* Thin out the marketing headings */
+    .featurette-heading {
+        font-weight: 300;
+        line-height: 1;
+        text-align: center;
+    }
+
+    .row-set {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    /* Thin out the marketing headings */
+    .featurette-p {
+        font-weight: 300;
+        font-size: 16px;
+        text-align: justify;
+        margin-bottom: 40px;
+    }
+    /* Carousel base class */
+    .carousel {
+        margin-bottom: 60px;
+    }
+
+    /* Since positioning the image, we need to help out the caption */
+    .carousel-caption {
+        z-index: 10;
+    }
+
+    /* Declare heights because of positioning of img element */
+    .carousel .item {
+        background-color: #777;
+    }
+
+}
+
+@media (min-width: 548px) {
+    .first-slide {
+        width: 100%;
+        content: url("../res/imagenes/limon1.png");
+    }
+
+    .second-slide {
+        width: 100%;
+        content: url("../res/imagenes/limon2.png");
+    }
+
+    .third-slide {
+        width: 100%;
+        content: url("../res/imagenes/limon3.png");
+    }
+}
+
+@media (max-width: 547px) {
+    .first-slide {
+        width: 100%;
+        content: url("../res/imagenes/1alt.png");
+    }
+
+    .second-slide {
+        width: 100%;
+        content: url("../res/imagenes/2alt.png");
+    }
+
+    .third-slide {
+        width: 100%;
+        content: url("../res/imagenes/3alt.png");
+    }
+}
+
+
+@media (min-width: 768px) {
+    /* Thin out the marketing headings */
+    .featurette-heading {
+        font-weight: 300;
+        line-height: 1;
+    }
+
+    .featurette-p {
+        text-align:justify;
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+
+    .optional-image
+    {
+        content: url("../res/imagenes/limon1.png");
+    }
+    
+    /* Carousel base class */
+    .carousel {
+        margin-bottom: 60px;
+    }
+
+    /* Since positioning the image, we need to help out the caption */
+    .carousel-caption {
+        z-index: 10;
+    }
+
+    /* Declare heights because of positioning of img element */
+    .carousel .item {
+        background-color: #777;
+    }
+
+
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.main-content .col-lg-4 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.main-content h2 {
+    font-weight: normal;
+}
+.main-content .col-lg-4 p {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+    margin: 30px 0; /* Space out the Bootstrap <hr> more */
+}
+
+
+
+
+.carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
+    right: 20px;  //or you can increase this
+}
+
+.carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
+    left: 20px; //or you can increase this
+}
+
+.subscribe {
+    font-size: 16px;
+    align-items: center;
+}
+
+.space-right {
+    padding-right: 80px;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+    /* Navbar positioning foo */
+    .navbar-wrapper {
+        margin-top: 20px;
+    }
+    .navbar-wrapper .container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .navbar-wrapper .navbar {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    /* The navbar becomes detached from the top, so we round the corners */
+    .navbar-wrapper .navbar {
+        border-radius: 4px;
+    }
+
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+        margin-bottom: 20px;
+        font-size: 21px;
+        line-height: 1.4;
+    }
+
+    .featurette-heading {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 992px) {
+    .featurette-heading {
+        margin-top: 10px;
+    }
+}
+
+/**********************END OF CAROUSEL*************************/
+
+/*FEATURETTE*/
+
+.featurette-heading {
+	color: #ee8005;
+	font-family: 'NeutraTextBold', sans-serif;
+	margin-bottom: 40px;
+}
+
+.featurette-p .row {
+	font-family: 'DINL', sans-serif;
+}
+
+button {
+	background-color: #ee8005;
+	color: #ffffff;
+}
+
+button:hover {
+	background-color: #fbc646;
+	color: #ffffff;
+}
+
+.col-md-6 .featurette-image {
+	margin-left: 60px;
+}
+
+.row .col-lg-4 {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.img-circle {
+	width: 70%;
+	height: auto;
+}
+
+.img-circle:hover {
+	opacity: 0.6;
+}
+
+.row {
+	margin-bottom: 50px;
+}
+/**********************TICKETS********************/
+.row-tickets {
+	margin: 0 auto;
+	margin-top: 160px;
+	margin-bottom: 70px;
+}
+
+.row-tickets h1 {
+ 	text-align: center;
+ 	color: #ee8005;
+ }
+
+ .row-tickets h2 {
+ 	color: #fbc646;
+ }
+
+.ticket-background {
+	background-image: url(../res/imagenes/back1.png);
+	height: 260px;
+}
+
+.ticket-container {
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.ticket-container .col-lg-4 {
+	margin-left: 50px;
+	float: left;
+	width: 45%;
+}
+
+
+.ticket-background .col-lg-4 {
+	background-color: #ffffff;
+	border-radius: 10px;
+	text-align: center;
+	margin-top: 30px;
+	margin-left: 50px;
+	padding-bottom: 15px;
+}
+
+
+
+.info-container {
+	margin: 0 auto;
+	margin-left:;
+}
+
+.info-container .col-lg-4 {
+	float: left;
+    width: 30%;
+    margin-left: 30px;
+    text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+	.row-tickets {
+		margin: 0 auto;
+		margin-top: 130px;
+		float: none;
+		height: auto;
+	}
+
+	.ticket-container {
+		height: auto;
+		float: none;
+		width: 100%;
+		margin: 0 auto;
+		margin-top: 20px;
+		margin-bottom: 50px;
+	}
+
+	.ticket-background {
+		height: 420px;
+	}
+
+	.ticket-background .col-lg-4 {
+		height: auto;
+		float: none;
+        margin: 0 auto;
+		width: 80%;
+		margin: 30px;
+	}
+
+	.ticket-container .col-lg-4 {
+		height: auto;
+		float: none;
+		margin: 0 auto;
+		margin: 30px;
+	}
+
+	.info-container {
+		height: 515px;
+	}
+
+	.info-container .col-lg-4 {
+		display: ;
+		height: auto;
+		float: none;
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+/**********************SHOP*******************/
+
+.row-shop {
+	margin: 0 auto;
+	width: 90%;
+	margin-top: 160px;
+	height: 810px;
+	background-color: #ffffff;
+}
+
+.back {
+	margin-top: 160px;
+	height: 810px;
+	background-image: url(../res/imagenes/back1.png);
+}
+
+.row-shop h1  {
+	text-align: center;
+	color: #ee8005;
+}
+
+.row-shop .col-lg-4 {
+	width: 25%;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.row-shop .col-lg-4 h2 {
+	font-family: 'NeutraTextBold', sans-serif;
+}
+
+.row-shop .col-lg-4 img {
+
+}
+
+@media screen and (max-width: 767px) {
+	.row-shop {
+		width: 80%;
+		margin-top: 90px;
+		height: auto;
+	}
+
+	.back {
+		margin-top: 90px;
+		height: auto;
+	}
+
+	.row-shop .col-lg-4 {
+		margin: 0 auto;
+		float: none;
+		width: 90%;
+		margin-bottom: 40px;
+	}
+}
+
+/*********************FOOTER******************/
+
+.footer {
+	position: absolute;
+	bottom: 0;
+    width: 100%;
+    font-family: NeutraTextBook;
+    font-size: 20px;
+    color: white;
+    height: 60px;
+    background-color: #fbc646;
+}
+
+.footer .container .pull-right .fa-lg {
+    font-size: 30px;
+    color: #ffffff;
+    margin: 5px;
+    margin-top: 20px;
+}
+
+.footer .container .pull-right .fa-lg:hover {
+	color: #ee8005;
+}
+
+.footer-text {
+    padding-top: 20px;
+}
+
+/*********************MEDIA QUERIES***************/
+
+/*NAV BAR*/
+@media (max-width: 767px) {
+
+    .navbar-toggle {
+        float: right;
+        margin-right: 5px;
+        margin-top: 25px;
+    }
+
+    .transparent {
+        background:rgba(69, 69, 69, 0.8);
+        border-style: none;
+    }
+
+    #myNavbar {
+        background: rgba(69, 69, 69, 0.8);
+    }
+
+    .navbar {
+        padding: 0;
+        transition: background 0.5s ease-in-out 0s, padding 0.5s ease-in-out 0s;
+    }
+    .navbar-brand {
+        float: left;
+        text-align: center;
+        font-size: 18px;
+        height: 90px;
+        line-height: 2px;
+        padding: 2px;
+    }
+
+}
